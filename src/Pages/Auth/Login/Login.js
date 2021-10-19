@@ -97,7 +97,7 @@ const Login = () =>
 
 
     return (
-        <div className="w-25 border border-2 rounded mx-auto m-4 p-3">
+        <div className="container border border-2 rounded my-lg-5 p-3">
             <h2 className="fw-light text-center text-success">
                 <u>
                     {
@@ -105,8 +105,8 @@ const Login = () =>
                     }
                 </u>
             </h2>
-            <Form onSubmit={handleRegister}>
-                <Form.Group className="mb-3">
+            <Form onSubmit={handleRegister} className="d-flex flex-column justify-content-center align-items-center">
+                <Form.Group className="mb-3 w-75">
                     {
                         isLogin && <div>
                             <Form.Label>Name</Form.Label>
@@ -114,7 +114,7 @@ const Login = () =>
                         </div>
                     }
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3 w-75" controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control onBlur={handleEmailChange} type="email" placeholder="Enter your email" required />
                     {
@@ -123,7 +123,7 @@ const Login = () =>
                         </Form.Text>
                     }
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3 w-75" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
                     <Form.Control onBlur={handlePassChange} type="password" placeholder="Enter your password" required />
                 </Form.Group>
@@ -135,14 +135,16 @@ const Login = () =>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check onChange={toggleLogin} type="checkbox" label="New to Fitness Club ?" />
                 </Form.Group>
-                <Button variant="outline-success" type="submit">
-                    {
-                        isLogin ? 'Register' : 'Log In'
-                    }
-                </Button>
-                <Button onClick={handleGoogleLogIn} variant="warning" className="ms-3">
-                    Login with Google
-                </Button>
+                <Form.Group className="mb-3">
+                    <Button variant="outline-success" type="submit">
+                        {
+                            isLogin ? 'Register' : 'Log In'
+                        }
+                    </Button>
+                    <Button onClick={handleGoogleLogIn} variant="warning" className="ms-3">
+                        Login with Google
+                    </Button>
+                </Form.Group>
             </Form>
         </div>
     );
