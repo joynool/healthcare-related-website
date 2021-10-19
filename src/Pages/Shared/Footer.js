@@ -4,6 +4,9 @@ import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faFacebook, faGoogle, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
+/*-----------------------------------------------------
+    Simple footer panel with navbar and social link
+-------------------------------------------------------*/
 const Footer = () =>
 {
     return (

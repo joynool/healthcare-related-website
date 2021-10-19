@@ -2,6 +2,9 @@ import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+/*-----------------------------------------------------
+            implement all service grid card panel 
+-------------------------------------------------------*/
 const Service = (props) =>
 {
     const { id, package_name, package_img, entry, charge, description } = props.service

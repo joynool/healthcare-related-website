@@ -3,6 +3,9 @@ import useFetch from '../../hooks/useFetch';
 import servicesImg from './../../images/services.png';
 import Service from './Service';
 
+/*-----------------------------------------------------
+    Pass fetch data to Service components using map() 
+-------------------------------------------------------*/
 const Services = () =>
 {
     return (

@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 
+/*-----------------------------------------------------
+    Implement custom hook as useFetch() to fetch data
+-------------------------------------------------------*/
+
 const useFetch = () =>
 {
     const [services, setServices] = useState([]);

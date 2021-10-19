@@ -3,6 +3,9 @@ import { Button, Form } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 
+/*-----------------------------------------------------
+            Login and Logout authentication panel 
+-------------------------------------------------------*/
 const Login = () =>
 {
     const [isLogin, setIsLogin] = useState(false);
@@ -11,6 +14,9 @@ const Login = () =>
     const [pass, setPass] = useState('');
     const { message, setMessage, setIsLoading, createNewUser, setUserName, processLogin, loginUsingGoogle } = useAuth();
 
+    /*-----------------------------------------------------
+                pick data from input field
+    -------------------------------------------------------*/
     const handleNameChange = e =>
     {
         setName(e.target.value);
@@ -26,6 +32,9 @@ const Login = () =>
         setPass(e.target.value);
     };
 
+    /*-----------------------------------------------------
+            User Email And password conditional handler 
+    -------------------------------------------------------*/
     const handleRegister = e =>
     {
         e.preventDefault();
@@ -48,14 +57,21 @@ const Login = () =>
                 }))
             :
             (processLogin(email, pass)
-                .finally(() =>
+                .then(result =>
                 {
                     history.push(location.state?.from || '/home')
+                })
+                .catch(error => { setMessage(error.message) })
+                .finally(() =>
+                {
                     setIsLoading(false)
                 }));
 
     };
 
+    /*-----------------------------------------------------
+                Google login handler
+    -------------------------------------------------------*/
     const location = useLocation();
     const history = useHistory();
 
@@ -70,11 +86,15 @@ const Login = () =>
             .finally(() => setIsLoading(false));
     }
 
+    /*-----------------------------------------------------
+        Implement toggle for login and register switcher 
+    -------------------------------------------------------*/
     const toggleLogin = e =>
     {
         setIsLogin(e.target.checked);
         setMessage('');
     };
+
 
     return (
         <div className="w-25 border border-2 rounded mx-auto m-4 p-3">

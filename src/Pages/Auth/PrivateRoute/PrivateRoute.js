@@ -3,12 +3,15 @@ import { Spinner } from 'react-bootstrap';
 import { Redirect, Route } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 
+/*-----------------------------------------------------
+        Private Route panel for login validation
+-------------------------------------------------------*/
 const PrivateRoute = ({ children, ...rest }) =>
 {
     const { user, isLoading } = useAuth();
 
     if (isLoading) {
-        return <Spinner animation="border" variant="danger" className="mt-5" />
+        return <Spinner animation="border" variant="danger" className="mx-auto p-5" />
     }
 
     return (

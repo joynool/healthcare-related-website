@@ -2,6 +2,9 @@ import React from 'react';
 import { Button, Col, FloatingLabel, Form, Row } from 'react-bootstrap';
 import background from './../../images/TryUsForFree.jpg';
 
+/*-----------------------------------------------------
+            Offer components panel
+-------------------------------------------------------*/
 const TryUsForFree = () =>
 {
     return (

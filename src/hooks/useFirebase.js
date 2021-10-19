@@ -2,6 +2,9 @@ import initializeAuthentication from './../Pages/Auth/Firebase/firebase.init'
 import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from 'firebase/auth';
 import { useState, useEffect } from 'react';
 
+/*-----------------------------------------------------
+    Custom hook as useFirebase() for all firebase code
+-------------------------------------------------------*/
 initializeAuthentication();
 
 const useFirebase = () =>
@@ -12,6 +15,9 @@ const useFirebase = () =>
 
     const auth = getAuth();
 
+    /*-----------------------------------------------------
+            User email password authentication panel 
+    -------------------------------------------------------*/
     const createNewUser = (name, email, pass) =>
     {
         setIsLoading(true)
@@ -22,8 +28,6 @@ const useFirebase = () =>
     {
         setIsLoading(true)
         return signInWithEmailAndPassword(auth, email, pass)
-            .then(result => { })
-            .catch(error => { setMessage(error.message) })
     }
 
     const setUserName = name =>
@@ -34,6 +38,9 @@ const useFirebase = () =>
             .finally(() => setIsLoading(false));
     }
 
+    /*-----------------------------------------------------
+                    Google Authentication panel 
+    -------------------------------------------------------*/
     const loginUsingGoogle = () =>
     {
         setIsLoading(true)
@@ -55,6 +62,9 @@ const useFirebase = () =>
         return () => unsubscribed;
     }, [auth]);
 
+    /*-----------------------------------------------------
+                        Logout panel 
+    -------------------------------------------------------*/
     const logOut = () =>
     {
         setIsLoading(true);

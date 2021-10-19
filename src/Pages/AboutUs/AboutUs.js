@@ -1,6 +1,9 @@
 import React from 'react';
 import coverPhoto from './../../images/aboutUs.png';
 
+/*-----------------------------------------------------
+            About us information panel 
+-------------------------------------------------------*/
 const AboutUs = () =>
 {
     return (

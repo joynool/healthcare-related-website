@@ -4,6 +4,9 @@ import logo from './../../images/fitness-club-logo.png';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from './../../hooks/useAuth';
 
+/*-----------------------------------------------------
+Header panel with navbar and display logged user name
+-------------------------------------------------------*/
 const Header = () =>
 {
     const { user, logOut } = useAuth();
