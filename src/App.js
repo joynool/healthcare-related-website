@@ -9,10 +9,10 @@ import AboutUs from './Pages/AboutUs/AboutUs';
 import NotFound from './Pages/NotFound/NotFound';
 import Login from './Pages/Auth/Login/Login';
 import Registration from './Pages/Auth/Registration/Registration';
-import Service from './Pages/Home/Service';
 import AuthProvider from './Context/AuthProvider';
 import Services from './Pages/Home/Services';
 import PrivateRoute from './Pages/Auth/PrivateRoute/PrivateRoute';
+import ServiceDetails from './Pages/Home/ServiceDetails';
 
 function App ()
 {
@@ -34,12 +34,12 @@ function App ()
             <Route path="/registration">
               <Registration />
             </Route>
-            <PrivateRoute path="/service/:serviceId">
-              <Service />
-            </PrivateRoute>
             <Route path="/services">
               <Services />
             </Route>
+            <PrivateRoute path="/service-details/:id">
+              <ServiceDetails />
+            </PrivateRoute>
             <PrivateRoute path="/try-us-for-free">
               <TryUsForFree />
             </PrivateRoute>
