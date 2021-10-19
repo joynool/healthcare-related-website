@@ -8,7 +8,6 @@ import TryUsForFree from './Pages/TryUsForFree/TryUsForFree';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import NotFound from './Pages/NotFound/NotFound';
 import Login from './Pages/Auth/Login/Login';
-import Registration from './Pages/Auth/Registration/Registration';
 import AuthProvider from './Context/AuthProvider';
 import Services from './Pages/Home/Services';
 import PrivateRoute from './Pages/Auth/PrivateRoute/PrivateRoute';
