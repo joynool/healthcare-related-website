@@ -9,7 +9,7 @@ const Header = () =>
     const { user, logOut } = useAuth();
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
             <Container>
                 <Navbar.Brand href="/home">
                     <img src={logo} alt="Fitness Club Logo" width="120px" height="100px" />
@@ -17,8 +17,8 @@ const Header = () =>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <Nav.Link as={HashLink} to="/home" className="fs-4 fw-normal me-2">Home</Nav.Link>
-                        <Nav.Link as={HashLink} to="/services#services" className="fs-4 fw-normal me-2">Services</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#home" className="fs-4 fw-normal me-2">Home</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#services" className="fs-4 fw-normal me-2">Services</Nav.Link>
                         <Nav.Link as={HashLink} to="/try-us-for-free" className="fs-4 fw-normal me-2">Try Us For <span className="text-danger fw-bold">FREE</span></Nav.Link>
                         <Nav.Link as={HashLink} to="/about" className="fs-4 fw-normal">About Us</Nav.Link>
                     </Nav>

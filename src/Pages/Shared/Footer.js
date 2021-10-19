@@ -19,16 +19,16 @@ const Footer = () =>
             <div className="my-4 my-lg-0">
                 <h4 className="text-center text-light fw-light">Follow us on Social Media</h4>
                 <Nav className="justify-content-center">
-                    <Nav.Link href="/home" className="text-light">
+                    <Nav.Link href="/home" className="text-light fs-4" title="Facebook">
                         <FontAwesomeIcon icon={faFacebook} />
                     </Nav.Link>
-                    <Nav.Link href="/home" className="text-light">
+                    <Nav.Link href="/home" className="text-light fs-4" title="Twitter">
                         <FontAwesomeIcon icon={faTwitter} />
                     </Nav.Link>
-                    <Nav.Link href="/home" className="text-light">
+                    <Nav.Link href="/home" className="text-light fs-4" title="Google">
                         <FontAwesomeIcon icon={faGoogle} />
                     </Nav.Link>
-                    <Nav.Link href="/home" className="text-light">
+                    <Nav.Link href="/home" className="text-light fs-4" title="Apple">
                         <FontAwesomeIcon icon={faApple} />
                     </Nav.Link>
                 </Nav>

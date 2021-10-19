@@ -12,6 +12,7 @@ import Registration from './Pages/Auth/Registration/Registration';
 import Service from './Pages/Home/Service';
 import AuthProvider from './Context/AuthProvider';
 import Services from './Pages/Home/Services';
+import PrivateRoute from './Pages/Auth/PrivateRoute/PrivateRoute';
 
 function App ()
 {
@@ -33,15 +34,15 @@ function App ()
             <Route path="/registration">
               <Registration />
             </Route>
-            <Route path="/service/:serviceId">
+            <PrivateRoute path="/service/:serviceId">
               <Service />
-            </Route>
+            </PrivateRoute>
             <Route path="/services">
               <Services />
             </Route>
-            <Route path="/try-us-for-free">
+            <PrivateRoute path="/try-us-for-free">
               <TryUsForFree />
-            </Route>
+            </PrivateRoute>
             <Route path="/about">
               <AboutUs />
             </Route>
