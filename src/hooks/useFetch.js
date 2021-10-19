@@ -10,7 +10,12 @@ const useFetch = () =>
 
     useEffect(() =>
     {
-        fetch('./fitness.json')
+        fetch('fitness.json', {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);
