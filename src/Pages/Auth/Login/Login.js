@@ -33,10 +33,7 @@ const Login = () =>
             setMessage('Password should be at least 6 character.')
             return;
         }
-        if (/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/.test(pass)) {
-            setMessage('Password must contain.')
-            return;
-        }
+
         isLogin ?
             (createNewUser(name, email, pass)
                 .then(result =>
