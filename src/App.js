@@ -31,9 +31,6 @@ function App ()
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/registration">
-              <Registration />
-            </Route>
             <Route path="/services">
               <Services />
             </Route>
