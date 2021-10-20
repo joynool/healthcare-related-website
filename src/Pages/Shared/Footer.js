@@ -14,8 +14,8 @@ const Footer = () =>
             <div>
                 <h3 className="text-light fw-light ms-2">Create Your Body at Fitness Club</h3>
                 <Nav className="justify-content-center">
-                    <Nav.Link as={HashLink} to="/home" className="text-light border-end border-2 m-0 p-0"><span className="mx-2">Home</span></Nav.Link>
-                    <Nav.Link as={HashLink} to="/services" className="text-light border-end border-2 m-0 p-0"><span className="mx-2">Services</span></Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#home" className="text-light border-end border-2 m-0 p-0"><span className="mx-2">Home</span></Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#services" className="text-light border-end border-2 m-0 p-0"><span className="mx-2">Services</span></Nav.Link>
                     <Nav.Link as={HashLink} to="/about" className="text-light m-0 p-0"><span className="mx-2">About Us</span></Nav.Link>
                 </Nav>
             </div>
