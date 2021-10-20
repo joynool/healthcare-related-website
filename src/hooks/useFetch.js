@@ -10,12 +10,7 @@ const useFetch = () =>
 
     useEffect(() =>
     {
-        fetch('fitness.json', {
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        })
+        fetch('https://joynool.github.io/fitness-club-data/fitness.json')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);

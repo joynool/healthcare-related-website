@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 -------------------------------------------------------*/
 const Service = (props) =>
 {
-    const { id, package_name, package_img, entry, charge, description } = props.service;
+    const { id, package_name, package_img, entry, charge } = props.service;
     return (
         <Col>
             <Card className=" text-center p-1 shadow-sm">
@@ -16,12 +16,9 @@ const Service = (props) =>
                     <Card.Title>{package_name}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted my-3">
                         {charge}
-                        <br />
-                        <small className="text-dark">Time: 6AM TO MIDNIGHT 12AM (Any Time access)</small>
                     </Card.Subtitle>
-                    <Card.Text>Facility: {description}</Card.Text>
                     <Link to={`/service-details/${id}`}>
-                        <Button variant="outline-secondary">More About Service</Button>
+                        <Button variant="outline-secondary">More About this Service</Button>
                     </Link>
                 </Card.Body>
                 <Card.Footer>
