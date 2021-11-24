@@ -26,9 +26,9 @@ const Services = () =>
                     <img src={servicesImg} alt="" className="img-fluid" />
                 </div>
             </div>
-            <div className="container p-3">
-                <h1 className="fw-light text-primary text-center m-3">- Our Services -</h1>
-                <Row xs={1} md={2} className="g-3">
+            <div className="container p-3 mb-5">
+                <h1 className="fw-light text-primary text-center m-5">- Our Services -</h1>
+                <Row xs={1} md={3} className="g-4">
                     {
                         useFetch().map(service => <Service
                             service={service}

@@ -7,11 +7,11 @@ import coverPhoto from './../../images/aboutUs.png';
 const AboutUs = () =>
 {
     return (
-        <div className="d-flex flex-column justify-content-center align-items-center p-3">
-            <div className="">
+        <div className="d-lg-flex justify-content-center align-items-center p-lg-5">
+            <div className="w-100">
                 <img src={coverPhoto} alt="" className="img-fluid img-thumbnail" />
             </div>
-            <div className="text-center border border-2 rounded my-3 p-3">
+            <div className="text-center my-3 p-3">
                 <h2 className="text-success text-decoration-underline mb-5">COACHING & TRAINING SERVICES</h2>
                 <div>
                     <h3 className="fw-normal">Advance Training</h3>

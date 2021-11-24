@@ -12,7 +12,7 @@ const Footer = () =>
     return (
         <div className="bg-secondary d-lg-flex justify-content-lg-around p-3">
             <div>
-                <h3 className="text-light fw-light ms-2">Create Your Body at Fitness Club</h3>
+                <h5 className="text-light fw-light ms-2">Create Your Body at Fitness Club</h5>
                 <Nav className="justify-content-center">
                     <Nav.Link as={HashLink} to="/home" className="text-light border-end border-2 m-0 p-0"><span className="mx-2">Home</span></Nav.Link>
                     <Nav.Link as={HashLink} to="/services" className="text-light border-end border-2 m-0 p-0"><span className="mx-2">Services</span></Nav.Link>
@@ -20,7 +20,7 @@ const Footer = () =>
                 </Nav>
             </div>
             <div className="my-4 my-lg-0">
-                <h4 className="text-center text-light fw-light">Follow us on Social Media</h4>
+                <h5 className="text-center text-light fw-light">Follow us on Social Media</h5>
                 <Nav className="justify-content-center">
                     <Nav.Link href="/home" className="text-light fs-4" title="Facebook">
                         <FontAwesomeIcon icon={faFacebook} />
