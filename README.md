@@ -1,11 +1,10 @@
 # Project Name: Fitness Club
 
-This site represents Fitness Club gym information with functionality. Its 3 pages website. Home page shows top banner and all services. Other two page represent offer and about us information. Its basically login/register based website so that you can get all service after successful register.
+This site represents Fitness Club gym information with functionality. It's 3 pages website. The home page shows the top banner and all services. The other two pages represent the offer and our information. It's a login/register-based website so that you can get all services after registering.
 
-Check out my live site - [Fitness Club](https://fitness-club-5b37c.web.app/).
+Check out live site - [Fitness Club](https://fitness-club-5b37c.web.app/).
 
-- This site represents gym information.
-- You can checkout all services at home page.
-- If you want details about services you must be registered.
-- You can also find 1 day offer.
-- You can find header and footer with all pages.
+- This site represents fitness club gym services with a membership facility.
+- If you want to check out the details service or the free offer, you must be successfully registered or logged in.
+- Without registering or login you can visit the home page and service page only.
+- Fully responsive for mobile devices and desktops with user-friendly UI.
